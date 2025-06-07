@@ -1,0 +1,105 @@
+07-Jun-2025 09:45:29.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.41
+07-Jun-2025 09:45:29.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 8 2025 12:44:02 UTC
+07-Jun-2025 09:45:29.735 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.41.0
+07-Jun-2025 09:45:29.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Jun-2025 09:45:29.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Jun-2025 09:45:29.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Jun-2025 09:45:29.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17
+07-Jun-2025 09:45:29.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.12+8-LTS-286
+07-Jun-2025 09:45:29.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Jun-2025 09:45:29.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Github\JSP\apache-tomcat-10.1.41
+07-Jun-2025 09:45:29.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Github\JSP\apache-tomcat-10.1.41
+07-Jun-2025 09:45:29.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Github\JSP\apache-tomcat-10.1.41\conf\logging.properties
+07-Jun-2025 09:45:29.779 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Jun-2025 09:45:29.780 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Jun-2025 09:45:29.780 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Jun-2025 09:45:29.780 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+07-Jun-2025 09:45:29.780 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+07-Jun-2025 09:45:29.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+07-Jun-2025 09:45:29.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+07-Jun-2025 09:45:29.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+07-Jun-2025 09:45:29.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-Jun-2025 09:45:29.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Jun-2025 09:45:29.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Github\JSP\apache-tomcat-10.1.41
+07-Jun-2025 09:45:29.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Github\JSP\apache-tomcat-10.1.41
+07-Jun-2025 09:45:29.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Github\JSP\apache-tomcat-10.1.41\temp
+07-Jun-2025 09:45:30.092 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+07-Jun-2025 09:45:30.106 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+07-Jun-2025 09:45:30.756 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Jun-2025 09:45:30.811 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1704] milliseconds
+07-Jun-2025 09:45:31.053 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Jun-2025 09:45:31.053 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.41]
+07-Jun-2025 09:45:31.094 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Github\JSP\apache-tomcat-10.1.41\conf\Catalina\localhost\ROOT.xml]
+07-Jun-2025 09:45:31.301 WARNING [main] org.apache.catalina.core.StandardContext.setPath A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+07-Jun-2025 09:45:31.306 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [] in deployment descriptor [C:\Github\JSP\apache-tomcat-10.1.41\conf\Catalina\localhost\ROOT.xml] has been ignored
+07-Jun-2025 09:45:33.604 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [267] milliseconds.
+07-Jun-2025 09:45:33.991 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Github\JSP\apache-tomcat-10.1.41\conf\Catalina\localhost\ROOT.xml] has finished in [2,897] ms
+07-Jun-2025 09:45:33.999 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\docs]
+07-Jun-2025 09:45:34.791 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\docs] has finished in [792] ms
+07-Jun-2025 09:45:34.792 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\examples]
+07-Jun-2025 09:45:37.891 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\examples] has finished in [3,099] ms
+07-Jun-2025 09:45:37.898 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\host-manager]
+07-Jun-2025 09:45:38.014 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\host-manager] has finished in [119] ms
+07-Jun-2025 09:45:38.014 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\manager]
+07-Jun-2025 09:45:38.127 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\manager] has finished in [111] ms
+07-Jun-2025 09:45:38.169 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Jun-2025 09:45:38.397 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [7586] milliseconds
+07-Jun-2025 09:46:00.763 INFO [http-nio-8080-exec-5] org.apache.catalina.startup.HostConfig.undeploy Undeploying context []
+07-Jun-2025 10:19:58.166 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-Jun-2025 10:19:58.167 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Jun-2025 10:19:58.575 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Jun-2025 10:19:58.599 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Jun-2025 10:19:58.613 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Jun-2025 15:57:05.399 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.41
+07-Jun-2025 15:57:05.445 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 8 2025 12:44:02 UTC
+07-Jun-2025 15:57:05.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.41.0
+07-Jun-2025 15:57:05.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Jun-2025 15:57:05.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Jun-2025 15:57:05.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Jun-2025 15:57:05.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17
+07-Jun-2025 15:57:05.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.12+8-LTS-286
+07-Jun-2025 15:57:05.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Jun-2025 15:57:05.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Github\JSP\apache-tomcat-10.1.41
+07-Jun-2025 15:57:05.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Github\JSP\apache-tomcat-10.1.41
+07-Jun-2025 15:57:05.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Github\JSP\apache-tomcat-10.1.41\conf\logging.properties
+07-Jun-2025 15:57:05.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Jun-2025 15:57:05.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Jun-2025 15:57:05.483 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Jun-2025 15:57:05.483 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+07-Jun-2025 15:57:05.483 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+07-Jun-2025 15:57:05.485 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+07-Jun-2025 15:57:05.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+07-Jun-2025 15:57:05.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+07-Jun-2025 15:57:05.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-Jun-2025 15:57:05.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Jun-2025 15:57:05.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Github\JSP\apache-tomcat-10.1.41
+07-Jun-2025 15:57:05.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Github\JSP\apache-tomcat-10.1.41
+07-Jun-2025 15:57:05.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Github\JSP\apache-tomcat-10.1.41\temp
+07-Jun-2025 15:57:05.506 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+07-Jun-2025 15:57:05.546 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+07-Jun-2025 15:57:07.507 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Jun-2025 15:57:07.672 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [3631] milliseconds
+07-Jun-2025 15:57:07.848 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Jun-2025 15:57:07.848 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.41]
+07-Jun-2025 15:57:07.880 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\docs]
+07-Jun-2025 15:57:09.773 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [118] milliseconds.
+07-Jun-2025 15:57:10.017 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\docs] has finished in [2,136] ms
+07-Jun-2025 15:57:10.018 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\examples]
+07-Jun-2025 15:57:12.696 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\examples] has finished in [2,679] ms
+07-Jun-2025 15:57:12.696 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\host-manager]
+07-Jun-2025 15:57:13.054 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\host-manager] has finished in [357] ms
+07-Jun-2025 15:57:13.054 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\manager]
+07-Jun-2025 15:57:13.371 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Github\JSP\apache-tomcat-10.1.41\webapps\manager] has finished in [317] ms
+07-Jun-2025 15:57:13.382 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Jun-2025 15:57:13.551 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5879] milliseconds
+07-Jun-2025 15:57:17.441 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Github\JSP\apache-tomcat-10.1.41\conf\Catalina\localhost\ROOT.xml]
+07-Jun-2025 15:57:17.449 WARNING [http-nio-8080-exec-10] org.apache.catalina.core.StandardContext.setPath A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+07-Jun-2025 15:57:17.450 WARNING [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [] in deployment descriptor [C:\Github\JSP\apache-tomcat-10.1.41\conf\Catalina\localhost\ROOT.xml] has been ignored
+07-Jun-2025 15:57:17.580 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Github\JSP\apache-tomcat-10.1.41\conf\Catalina\localhost\ROOT.xml] has finished in [138] ms
+07-Jun-2025 15:57:17.592 INFO [http-nio-8080-exec-2] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.
+07-Jun-2025 15:58:39.389 INFO [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.undeploy Undeploying context []
+07-Jun-2025 15:59:42.152 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-Jun-2025 15:59:42.152 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Jun-2025 15:59:42.405 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Jun-2025 15:59:42.423 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Jun-2025 15:59:42.445 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

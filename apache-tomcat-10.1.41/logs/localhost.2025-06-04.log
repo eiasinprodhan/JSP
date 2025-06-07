@@ -1,0 +1,934 @@
+04-Jun-2025 21:52:02.566 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-Jun-2025 21:52:02.569 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-Jun-2025 21:52:02.583 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@eb6449b')
+04-Jun-2025 22:30:38.042 SEVERE [http-nio-8080-exec-19] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/index.jsp]
+name cannot be resolved to a variable
+9:         <%
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(name==null){
+13:             out.println("");
+14:             }
+15:             else{
+
+
+An error occurred at line: [16] in the jsp file: [/index.jsp]
+name cannot be resolved to a variable
+13:             out.println("");
+14:             }
+15:             else{
+16:             out.println(name);
+17:             }
+18:         %>
+19: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/index.jsp]
+name cannot be resolved to a variable
+9:         <%
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(name==null){
+13:             out.println("");
+14:             }
+15:             else{
+
+
+An error occurred at line: [16] in the jsp file: [/index.jsp]
+name cannot be resolved to a variable
+13:             out.println("");
+14:             }
+15:             else{
+16:             out.println(name);
+17:             }
+18:         %>
+19: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+04-Jun-2025 22:39:53.487 SEVERE [http-nio-8080-exec-28] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/index.jsp]
+The method equalIgnoreCase(String) is undefined for the type String
+9:         <%
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+
+
+An error occurred at line: [13] in the jsp file: [/index.jsp]
+The method equal(String) is undefined for the type String
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+
+
+An error occurred at line: [14] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+17:             out.println("Wrong password.");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/index.jsp]
+The method equalIgnoreCase(String) is undefined for the type String
+9:         <%
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+
+
+An error occurred at line: [13] in the jsp file: [/index.jsp]
+The method equal(String) is undefined for the type String
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+
+
+An error occurred at line: [14] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+17:             out.println("Wrong password.");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+04-Jun-2025 22:39:59.209 SEVERE [http-nio-8080-exec-23] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/index.jsp]
+The method equalIgnoreCase(String) is undefined for the type String
+9:         <%
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+
+
+An error occurred at line: [13] in the jsp file: [/index.jsp]
+The method equal(String) is undefined for the type String
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+
+
+An error occurred at line: [14] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+17:             out.println("Wrong password.");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/index.jsp]
+The method equalIgnoreCase(String) is undefined for the type String
+9:         <%
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+
+
+An error occurred at line: [13] in the jsp file: [/index.jsp]
+The method equal(String) is undefined for the type String
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+
+
+An error occurred at line: [14] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+17:             out.println("Wrong password.");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+04-Jun-2025 22:40:05.082 SEVERE [http-nio-8080-exec-25] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/index.jsp]
+The method equalIgnoreCase(String) is undefined for the type String
+9:         <%
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+
+
+An error occurred at line: [13] in the jsp file: [/index.jsp]
+The method equal(String) is undefined for the type String
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+
+
+An error occurred at line: [14] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+17:             out.println("Wrong password.");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/index.jsp]
+The method equalIgnoreCase(String) is undefined for the type String
+9:         <%
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+
+
+An error occurred at line: [13] in the jsp file: [/index.jsp]
+The method equal(String) is undefined for the type String
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+
+
+An error occurred at line: [14] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+17:             out.println("Wrong password.");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+04-Jun-2025 22:40:22.748 SEVERE [http-nio-8080-exec-26] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/index.jsp]
+The method equalIgnoreCase(String) is undefined for the type String
+9:         <%
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+
+
+An error occurred at line: [13] in the jsp file: [/index.jsp]
+The method equal(String) is undefined for the type String
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+
+
+An error occurred at line: [14] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+17:             out.println("Wrong password.");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/index.jsp]
+The method equalIgnoreCase(String) is undefined for the type String
+9:         <%
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+
+
+An error occurred at line: [13] in the jsp file: [/index.jsp]
+The method equal(String) is undefined for the type String
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+
+
+An error occurred at line: [14] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+11:             String password = request.getParameter("password");
+12:             if(email != null && email.equalIgnoreCase("eiasin@gmail.com")){
+13:             if(password !=null && password.equal("12345")){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+17:             out.println("Wrong password.");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+04-Jun-2025 22:40:28.290 SEVERE [http-nio-8080-exec-23] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/index.jsp]
+Syntax error on token ")", delete this token
+9:         <%
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email=="eiasin@gmail.com")){
+13:             if(password !=null && password=="12345"){
+14:             out.println("Hello, World")
+15:             }
+
+
+An error occurred at line: [14] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+11:             String password = request.getParameter("password");
+12:             if(email != null && email=="eiasin@gmail.com")){
+13:             if(password !=null && password=="12345"){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+17:             out.println("Wrong password.");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/index.jsp]
+Syntax error on token ")", delete this token
+9:         <%
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email=="eiasin@gmail.com")){
+13:             if(password !=null && password=="12345"){
+14:             out.println("Hello, World")
+15:             }
+
+
+An error occurred at line: [14] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+11:             String password = request.getParameter("password");
+12:             if(email != null && email=="eiasin@gmail.com")){
+13:             if(password !=null && password=="12345"){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+17:             out.println("Wrong password.");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+04-Jun-2025 22:40:32.415 SEVERE [http-nio-8080-exec-31] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/index.jsp]
+Syntax error on token ")", delete this token
+9:         <%
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email=="eiasin@gmail.com")){
+13:             if(password !=null && password=="12345"){
+14:             out.println("Hello, World")
+15:             }
+
+
+An error occurred at line: [14] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+11:             String password = request.getParameter("password");
+12:             if(email != null && email=="eiasin@gmail.com")){
+13:             if(password !=null && password=="12345"){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+17:             out.println("Wrong password.");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/index.jsp]
+Syntax error on token ")", delete this token
+9:         <%
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             if(email != null && email=="eiasin@gmail.com")){
+13:             if(password !=null && password=="12345"){
+14:             out.println("Hello, World")
+15:             }
+
+
+An error occurred at line: [14] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+11:             String password = request.getParameter("password");
+12:             if(email != null && email=="eiasin@gmail.com")){
+13:             if(password !=null && password=="12345"){
+14:             out.println("Hello, World")
+15:             }
+16:             else{
+17:             out.println("Wrong password.");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+04-Jun-2025 22:41:10.141 SEVERE [http-nio-8080-exec-32] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [13] in the jsp file: [/index.jsp]
+Syntax error on token ")", delete this token
+10:             String email = request.getParameter("email");
+11:             
+12:             
+13:             if(email != null && email=="eiasin@gmail.com")){
+14:             String password = request.getParameter("password");
+15:             if(password !=null && password=="12345"){
+16:             out.println("Hello, World")
+
+
+An error occurred at line: [16] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+13:             if(email != null && email=="eiasin@gmail.com")){
+14:             String password = request.getParameter("password");
+15:             if(password !=null && password=="12345"){
+16:             out.println("Hello, World")
+17:             }
+18:             else{
+19:             out.println("Wrong password.");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [13] in the jsp file: [/index.jsp]
+Syntax error on token ")", delete this token
+10:             String email = request.getParameter("email");
+11:             
+12:             
+13:             if(email != null && email=="eiasin@gmail.com")){
+14:             String password = request.getParameter("password");
+15:             if(password !=null && password=="12345"){
+16:             out.println("Hello, World")
+
+
+An error occurred at line: [16] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+13:             if(email != null && email=="eiasin@gmail.com")){
+14:             String password = request.getParameter("password");
+15:             if(password !=null && password=="12345"){
+16:             out.println("Hello, World")
+17:             }
+18:             else{
+19:             out.println("Wrong password.");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+04-Jun-2025 22:41:11.788 SEVERE [http-nio-8080-exec-31] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] with root cause
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:119)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:56)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:171)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:390)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+04-Jun-2025 22:41:16.207 SEVERE [http-nio-8080-exec-31] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [13] in the jsp file: [/index.jsp]
+Syntax error on token ")", delete this token
+10:             String email = request.getParameter("email");
+11:             
+12:             
+13:             if(email != null && email=="eiasin@gmail.com")){
+14:             String password = request.getParameter("password");
+15:             if(password !=null && password=="12345"){
+16:             out.println("Hello, World")
+
+
+An error occurred at line: [16] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+13:             if(email != null && email=="eiasin@gmail.com")){
+14:             String password = request.getParameter("password");
+15:             if(password !=null && password=="12345"){
+16:             out.println("Hello, World")
+17:             }
+18:             else{
+19:             out.println("Wrong password.");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [13] in the jsp file: [/index.jsp]
+Syntax error on token ")", delete this token
+10:             String email = request.getParameter("email");
+11:             
+12:             
+13:             if(email != null && email=="eiasin@gmail.com")){
+14:             String password = request.getParameter("password");
+15:             if(password !=null && password=="12345"){
+16:             out.println("Hello, World")
+
+
+An error occurred at line: [16] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete BlockStatements
+13:             if(email != null && email=="eiasin@gmail.com")){
+14:             String password = request.getParameter("password");
+15:             if(password !=null && password=="12345"){
+16:             out.println("Hello, World")
+17:             }
+18:             else{
+19:             out.println("Wrong password.");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+04-Jun-2025 22:55:52.243 SEVERE [http-nio-8080-exec-42] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [13] in the jsp file: [/index.jsp]
+The method usercheck(String) is undefined for the type index_jsp
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             out.println("Email: " + email + "<br/>Password: " + password);
+13:             usercheck(password);
+14:         %>
+15: 
+16:         <form action="index.jsp" method="post">
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [13] in the jsp file: [/index.jsp]
+The method usercheck(String) is undefined for the type index_jsp
+10:             String email = request.getParameter("email");
+11:             String password = request.getParameter("password");
+12:             out.println("Email: " + email + "<br/>Password: " + password);
+13:             usercheck(password);
+14:         %>
+15: 
+16:         <form action="index.jsp" method="post">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+04-Jun-2025 22:56:14.729 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+04-Jun-2025 22:56:14.729 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
