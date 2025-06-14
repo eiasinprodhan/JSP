@@ -979,3 +979,9 @@
 127.0.0.1 - tomcat [14/Jun/2025:18:18:50 +0600] "GET /manager/text/ HTTP/1.1" 200 39
 0:0:0:0:0:0:0:1 - - [14/Jun/2025:18:29:52 +0600] "GET /FirstJSPProject/allstudents.jsp HTTP/1.1" 200 7673
 0:0:0:0:0:0:0:1 - - [14/Jun/2025:18:29:57 +0600] "GET /FirstJSPProject/allstudents.jsp HTTP/1.1" 200 7673
+127.0.0.1 - - [14/Jun/2025:18:31:59 +0600] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - tomcat [14/Jun/2025:18:31:59 +0600] "GET /manager/text/ HTTP/1.1" 200 39
+127.0.0.1 - - [14/Jun/2025:18:31:59 +0600] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - tomcat [14/Jun/2025:18:31:59 +0600] "GET /manager/text/ HTTP/1.1" 200 39
+127.0.0.1 - - [14/Jun/2025:18:31:59 +0600] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - tomcat [14/Jun/2025:18:31:59 +0600] "GET /manager/text/ HTTP/1.1" 200 39
