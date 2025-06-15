@@ -33,7 +33,7 @@ CREATE TABLE `employee` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `email_UNIQUE` (`email`),
   UNIQUE KEY `phone_UNIQUE` (`phone`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,7 @@ CREATE TABLE `employee` (
 
 LOCK TABLES `employee` WRITE;
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
-INSERT INTO `employee` VALUES (1,'Eiasin Prodhan','eiasinprodhan@gmail.com','01888118271','Male','CEO',1000000.00),(2,'Rakib Islam','rakibislam@gmail.com','01865321548','Male','Junior Software Developer',50000.00),(3,'Parvej Hossain','parvejhossain@gmail.com','01758486985','Male','Senior Software Developer',100000.00),(4,'Atiqur Rahman','atiqurrahman@gmail.com','01568987478','Male','Intern Software Developer',25000.00),(5,'Ayman Sadia','aymansadia@gmail.com','01689547858','Female','Project Manager',500000.00);
+INSERT INTO `employee` VALUES (1,'Eiasin Prodhan','eiasinprodhan@gmail.com','01888118271','Male','CEO',1000000.00),(2,'Rakib Islam','rakibislam@gmail.com','01865321548','Male','Junior Software Developer',50000.00),(3,'Parvej Hossain','parvejhossain@gmail.com','01758486985','Male','Senior Software Developer',100000.00),(4,'Atiqur Rahman','atiqurrahman@gmail.com','01568987478','Male','Intern Software Developer',25000.00),(5,'Ayman Sadia','aymansadia@gmail.com','01689547858','Female','Project Manager',500000.00),(6,'Sadiar Rahman','sadiarrahman@gmail.com','0176854987','Male','Intern Software Developer',25000.00);
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-06-15 12:37:30
+-- Dump completed on 2025-06-15 13:22:17
