@@ -18,7 +18,8 @@
                 <div class="col-md-6">
                     <div class="mb-3">
                         <label class="form-label">ID</label>
-                        <input name="id" type="hidden" class="form-control" id="id" value="<%=e.getId()%>">
+                        <input name="id" type="hidden" id="id" value="<%=e.getId()%>">
+                        <input type="text" class="form-control" value="<%=e.getId()%>" disabled>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Name</label>
@@ -40,7 +41,7 @@
                         <select name="designation" class="form-select" id="designation">
                             <option value="CEO" <%= "CEO".equals(e.getDesignation()) ? "selected" : "" %>>CEO</option>
                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
-                            <option value="Senior Software Engineer" <%= "Senior Software Engineer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Engineer</option>
+                            <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
                             <option value="Intern Software Developer" <%= "Intern Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Intern Software Developer</option>
                         </select>

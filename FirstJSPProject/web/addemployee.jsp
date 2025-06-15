@@ -29,7 +29,7 @@
                             <option value="null" selected>Choose Your Designation</option>
                             <option value="CEO">CEO</option>
                             <option value="Project Manager">Project Manager</option>
-                            <option value="Senior Software Engineer">Senior Software Engineer</option>
+                            <option value="Senior Software Developer">Senior Software Developer</option>
                             <option value="Junior Software Developer">Junior Software Developer</option>
                             <option value="Intern Software Developer">Intern Software Developer</option>
                         </select>
