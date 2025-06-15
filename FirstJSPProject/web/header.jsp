@@ -33,8 +33,8 @@
                             <a class="nav-link" href="about.jsp">About</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 bg-warning border-danger" type="search" placeholder="Search employee..." aria-label="Search"/>
+                    <form action="search.jsp" method="post" class="d-flex" role="search">
+                        <input name="name" id="name" class="form-control me-2 bg-warning border-danger" type="search" placeholder="Search employee..." aria-label="Search"/>
                         <button class="btn btn-danger" type="submit">Search</button>
                     </form>
                 </div>

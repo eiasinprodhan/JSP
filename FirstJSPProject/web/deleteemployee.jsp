@@ -2,8 +2,8 @@
 <%@page  import="dao.EmployeeDao" %>
 <jsp:setProperty  name="e" property="*" />
 
-<%
-    EmployeeDao.deleteEmployee(e.getId());
-    
-    response.sendRedirect("employeelist.jsp");
+<% 
+      EmployeeDao.deleteEmployee(e.getId());
+       
+      response.sendRedirect("employeelist.jsp");
 %>

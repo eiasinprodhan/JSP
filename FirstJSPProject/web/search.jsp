@@ -6,11 +6,12 @@
 <%@include file="header.jsp" %>
 
 <%
-    List<Employee> list = EmployeeDao.getEmployees();
+    String name = request.getParameter("name");
+    List<Employee> list = EmployeeDao.searchEmployeesByName(name);
     request.setAttribute("list", list);
 %>
 
-<title>Employee List | Employee JSP Project</title>
+<title>Employee Search Result | Employee JSP Project</title>
 <div class="container bg-danger my-3 px-0 border border-danger rounded">
     <h3 class="text-center text-light my-2">Employee List</h3>
     <table class="table table-light table-striped my-0">
