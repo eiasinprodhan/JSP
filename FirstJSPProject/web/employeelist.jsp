@@ -37,8 +37,8 @@
                     <td class="text-center">${e.getDesignation()}</td>
                     <td class="text-center">${e.getSalary()}</td>
                     <td class="text-center">
-                        <button class="btn btn-success btn-sm mx-1">Edit</button>
-                        <button class="btn btn-danger btn-sm mx-1">Delete</button>
+                        <a href="editstudent.jsp?id=${e.getId()}"><button class="btn btn-success btn-sm mx-1">Edit</button></a>
+                        <a href="deletestudent.jsp?id=${e.getId()}"><button class="btn btn-danger btn-sm mx-1" onclick="return confirm('Are you really want to delete ${e.getName()} details?')">Delete</button></a>
                     </td>
                 </tr>
             </c:forEach>

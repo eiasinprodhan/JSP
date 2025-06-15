@@ -66,4 +66,18 @@ public class EmployeeDao {
 
         return status;
     }
+    
+    public static void deleteEmployee(int id){
+        sql = "delete from employee where id = ?";
+        try {
+            ps = DatabaseConnection.getConnection().prepareStatement(sql);
+            ps.setInt(1, id);
+            ps.executeUpdate();
+            ps.close();
+            DatabaseConnection.getConnection().close();
+        } catch (SQLException ex) {
+            Logger.getLogger(EmployeeDao.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
 }
