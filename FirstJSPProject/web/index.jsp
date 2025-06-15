@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="header.jsp" %>
 <title>Employee JSP Project</title>
-<div class="container-fluid">
+<div class="container-fluid p-0">
     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -10,13 +10,13 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://img.freepik.com/free-photo/business-meeting-about-employment_53876-94801.jpg" style="height: 80vh" class="d-block w-100" alt="...">
+                <img src="(1).jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="https://img.freepik.com/premium-photo/silhouette-image-business-people-group-city-background_31965-26180.jpg" style="height: 80vh" class="d-block w-100" alt="...">
+                <img src="(2).jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="https://img.freepik.com/free-photo/business-recruitment-application_53876-94931.jpg" style="height: 80vh" class="d-block w-100" alt="...">
+                <img src="(3).jpg" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

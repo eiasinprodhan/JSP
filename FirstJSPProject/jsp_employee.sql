@@ -29,7 +29,7 @@ CREATE TABLE `employee` (
   `phone` varchar(45) NOT NULL,
   `gender` varchar(45) NOT NULL,
   `designation` varchar(45) NOT NULL,
-  `salary` varchar(45) NOT NULL,
+  `salary` float(10,2) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email_UNIQUE` (`email`),
   UNIQUE KEY `phone_UNIQUE` (`phone`)
@@ -42,7 +42,7 @@ CREATE TABLE `employee` (
 
 LOCK TABLES `employee` WRITE;
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
-INSERT INTO `employee` VALUES (1,'Eiasin Prodhan','eiasinprodhan@gmail.com','01888118271','Male','CEO','10000000'),(2,'Rakib Islam','rakibislam@gmail.com','01965315847','Male','Junior Software Developer','50000'),(4,'Parvej Hossain','parvejhossain@gmail.com','01965321548','Male','Senior Software Engineer','100000'),(5,'CM Reja','cmreja@gmail.com','01785236587','Male','Intern Software Developer','25000');
+INSERT INTO `employee` VALUES (1,'Eiasin Prodhan','eiasinprodhan@gmail.com','01888118271','Male','CEO',1000000.00),(2,'Rakib Islam','rakibislam@gmail.com','01865321548','Male','Junior Software Developer',50000.00),(3,'Parvej Hossain','parvejhossain@gmail.com','01758486985','Male','Senior Software Developer',100000.00),(4,'Atiqur Rahman','atiqurrahman@gmail.com','01568987478','Male','Intern Software Developer',25000.00),(5,'Ayman Sadia','aymansadia@gmail.com','01689547858','Female','Project Manager',500000.00);
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-06-15  0:47:48
+-- Dump completed on 2025-06-15 12:37:30

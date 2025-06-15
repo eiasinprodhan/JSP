@@ -16,7 +16,7 @@ public class StudentDao {
     public static int saveStudent(Student student){
         int status = 0;
         
-        sql = "insert into studentdetails(name,email,fee)values(?,?,?,?)";
+        sql = "insert into studentdetails(name,email,fee)values(?,?,?)";
         try {
             ps = dc.getConnection().prepareCall(sql);
             ps.setString(1, student.getName());

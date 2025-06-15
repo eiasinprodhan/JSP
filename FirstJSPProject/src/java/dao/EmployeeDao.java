@@ -31,7 +31,7 @@ public class EmployeeDao {
                         rs.getString("phone"),
                         rs.getString("gender"),
                         rs.getString("designation"),
-                        rs.getString("salary")
+                        rs.getFloat("salary")
                 );
 
                 employees.add(employee);
@@ -56,7 +56,7 @@ public class EmployeeDao {
             ps.setString(3, e.getPhone());
             ps.setString(4, e.getGender());
             ps.setString(5, e.getDesignation());
-            ps.setString(6, e.getSalary());
+            ps.setFloat(6, e.getSalary());
             status = ps.executeUpdate();
             ps.close();
             DatabaseConnection.getConnection().close();

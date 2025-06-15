@@ -8,12 +8,12 @@ public class Employee {
     private String phone;
     private String gender;
     private String designation;
-    private String salary;
+    private float salary;
 
     public Employee() {
     }
 
-    public Employee(int id, String name, String email, String phone, String gender, String designation, String salary) {
+    public Employee(int id, String name, String email, String phone, String gender, String designation, float salary) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -23,7 +23,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    public Employee(String name, String email, String phone, String gender, String designation, String salary) {
+    public Employee(String name, String email, String phone, String gender, String designation, float salary) {
         this.name = name;
         this.email = email;
         this.phone = phone;
@@ -80,11 +80,11 @@ public class Employee {
         this.designation = designation;
     }
 
-    public String getSalary() {
+    public float getSalary() {
         return salary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(float salary) {
         this.salary = salary;
     }
 

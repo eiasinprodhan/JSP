@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <div class="container-fluid bg-warning">
     <div class="container">
-        <footer class="py-3 my-4">
+        <footer class="py-3">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item"><a href="index.jsp" class="nav-link px-2 text-body-secondary">Home</a></li>
                 <li class="nav-item"><a href="employeelist.jsp" class="nav-link px-2 text-body-secondary">Employee List</a></li>
