@@ -26,6 +26,7 @@
                     <div class="mb-3">
                         <label class="form-label">Designation</label>
                         <select name="designation" class="form-select" id="designation">
+                            <option value="null" selected>Choose Your Designation</option>
                             <option value="CEO">CEO</option>
                             <option value="Project Manager">Project Manager</option>
                             <option value="Senior Software Engineer">Senior Software Engineer</option>
