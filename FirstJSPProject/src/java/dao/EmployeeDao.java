@@ -130,7 +130,7 @@ public class EmployeeDao {
         return status;
     }
     
-    public static List<Employee> searchEmployeesByName(String name) {
+    public static List<Employee> searchEmployees(String name) {
         List<Employee> employees = new ArrayList<>();
         sql = "select * from employee where id like ? or name like ?";
         try {

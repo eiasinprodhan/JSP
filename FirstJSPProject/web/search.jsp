@@ -7,7 +7,7 @@
 
 <%
     String name = request.getParameter("name");
-    List<Employee> list = EmployeeDao.searchEmployeesByName(name);
+    List<Employee> list = EmployeeDao.searchEmployees(name);
     request.setAttribute("list", list);
 %>
 
