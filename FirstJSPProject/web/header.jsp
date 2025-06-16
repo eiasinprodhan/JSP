@@ -34,7 +34,7 @@
                         </li>
                     </ul>
                     <form action="search.jsp" method="post" class="d-flex" role="search">
-                        <input name="name" id="name" class="form-control me-2 bg-warning border-danger" type="search" placeholder="Search employee..." aria-label="Search"/>
+                        <input name="keyword" id="keyword" class="form-control me-2 bg-warning border-danger" type="search" placeholder="Search employee..." aria-label="Search"/>
                         <button class="btn btn-danger" type="submit">Search</button>
                     </form>
                 </div>

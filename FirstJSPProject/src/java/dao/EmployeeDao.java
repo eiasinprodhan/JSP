@@ -107,10 +107,10 @@ public class EmployeeDao {
         }
         return employee;
     }
-    
-    public static int updateEmployee(Employee e){
+
+    public static int updateEmployee(Employee e) {
         int status = 0;
-        
+
         sql = "update employee set name = ?, email = ?, phone = ?, gender = ?, designation = ?, salary = ? where id = ?";
         try {
             ps = DatabaseConnection.getConnection().prepareStatement(sql);
@@ -129,17 +129,17 @@ public class EmployeeDao {
         }
         return status;
     }
-    
-    public static List<Employee> searchEmployees(String name) {
+
+    public static List<Employee> searchEmployees(String keyword) {
         List<Employee> employees = new ArrayList<>();
         sql = "select * from employee where id like ? or name like ?";
         try {
             ps = DatabaseConnection.getConnection().prepareCall(sql);
-            
-            for(int i=1; i<=2; i++){
-                ps.setString(i, "%" + name + "%");
+
+            for (int i = 1; i <= 2; i++) {
+                ps.setString(i, "%" + keyword + "%");
             }
-            
+
             rs = ps.executeQuery();
             while (rs.next()) {
                 Employee employee = new Employee(

@@ -6,8 +6,8 @@
 <%@include file="header.jsp" %>
 
 <%
-    String name = request.getParameter("name");
-    List<Employee> list = EmployeeDao.searchEmployees(name);
+    String keyword = request.getParameter("keyword");
+    List<Employee> list = EmployeeDao.searchEmployees(keyword);
     request.setAttribute("list", list);
 %>
 
