@@ -30,10 +30,10 @@
                             <a class="nav-link active" aria-current="page" href="searchemployee.jsp"><i class="fa-solid fa-magnifying-glass"></i> Search Employee</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contactus.jsp"><i class="fa-solid fa-phone"></i> Contact Us</a>
+                            <a class="nav-link active" href="contactus.jsp"><i class="fa-solid fa-phone"></i> Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="aboutus.jsp"><i class="fa-solid fa-users-gear"></i> About Us</a>
+                            <a class="nav-link active" href="aboutus.jsp"><i class="fa-solid fa-users-gear"></i> About Us</a>
                         </li>
                     </ul>
                 </div>
