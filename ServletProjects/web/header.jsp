@@ -20,15 +20,14 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/"><i class="fa-solid fa-house"></i> Home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-user"></i> Employee
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="allemployees.jsp"><i class="fa-solid fa-users"></i> All Employees</a></li>
-                                <li><a class="dropdown-item" href="addemployee.jsp"><i class="fa-solid fa-user-plus"></i> Add Employee</a></li>
-                                <li><a class="dropdown-item" href="searchemployee.jsp"><i class="fa-solid fa-magnifying-glass"></i> Search Employee</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="allemployees.jsp"><i class="fa-solid fa-users"></i> All Employees</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="addemployee.jsp"><i class="fa-solid fa-user-plus"></i> Add Employee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="searchemployee.jsp"><i class="fa-solid fa-magnifying-glass"></i> Search Employee</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contactus.jsp"><i class="fa-solid fa-phone"></i> Contact Us</a>

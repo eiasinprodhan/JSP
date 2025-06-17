@@ -74,13 +74,14 @@ public class EmployeeDao {
             ps.setInt(1, id);
             rs = ps.executeQuery();
             while (rs.next()) {
+                int id1 = rs.getInt("id");
                 String name = rs.getString("name");
                 String email = rs.getString("email");
                 String phone = rs.getString("phone");
                 String gender = rs.getString("gender");
                 String designation = rs.getString("designation");
                 float salary = rs.getFloat("salary");
-                employee = new Employee(name, email, phone, gender, designation, salary);
+                employee = new Employee(id1, name, email, phone, gender, designation, salary);
             }
             rs.close();
             ps.close();
@@ -126,6 +127,41 @@ public class EmployeeDao {
             Logger.getLogger(EmployeeDao.class.getName()).log(Level.SEVERE, null, ex);
         }
         return status;
+    }
+    
+    //Search Employee From Database By Id Or Name
+    public static List<Employee> searchEmployees(String keyword) {
+        List<Employee> employees = new ArrayList<>();
+        sql = "select * from employee where id like ? or name like ?";
+        try {
+            ps = DatabaseConnection.getConnection().prepareCall(sql);
+
+            for (int i = 1; i <= 2; i++) {
+                ps.setString(i, "%" + keyword + "%");
+            }
+
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Employee employee = new Employee(
+                        rs.getInt("id"),
+                        rs.getString("name"),
+                        rs.getString("email"),
+                        rs.getString("phone"),
+                        rs.getString("gender"),
+                        rs.getString("designation"),
+                        rs.getFloat("salary")
+                );
+
+                employees.add(employee);
+            }
+            rs.close();
+            ps.close();
+            DatabaseConnection.getConnection().close();
+        } catch (SQLException ex) {
+            Logger.getLogger(EmployeeDao.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        return employees;
     }
         
 }

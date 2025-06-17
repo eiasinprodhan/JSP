@@ -1,2 +1,1450 @@
 17-Jun-2025 00:27:15.837 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
 17-Jun-2025 00:27:15.837 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+17-Jun-2025 10:47:38.881 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+17-Jun-2025 10:47:38.881 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+17-Jun-2025 10:47:38.884 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@65a9ea3c')
+17-Jun-2025 11:00:32.297 SEVERE [http-nio-8080-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [8] in the jsp file: [/allemployees.jsp]
+The method setAttribute(String, List<Employee>) is undefined for the type HttpServletResponse
+5: 
+6: <%
+7:     List<Employee> list = EmployeeDao.getAllEmployees();
+8:     response.setAttribute("list", list);
+9:     
+10: %>
+11: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [8] in the jsp file: [/allemployees.jsp]
+The method setAttribute(String, List<Employee>) is undefined for the type HttpServletResponse
+5: 
+6: <%
+7:     List<Employee> list = EmployeeDao.getAllEmployees();
+8:     response.setAttribute("list", list);
+9:     
+10: %>
+11: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+17-Jun-2025 11:00:56.116 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing [/footer.jsp] at line [13]
+
+10:             </div>
+11:             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+12:                 <li class="ms-3">
+13:                     <a class="text-body-secondary" href="#" aria-label="Facebook">
+14:                         <h5><i class="fa-brands fa-facebook"></i></h5>
+15:                     </a>
+16:                 </li>
+
+
+Stacktrace:] with root cause
+	jakarta.el.MethodNotFoundException: Method not found: class java.lang.String.getId()
+		at jakarta.el.Util.findWrapper(Util.java:298)
+		at jakarta.el.Util.findMethod(Util.java:142)
+		at jakarta.el.BeanELResolver.invoke(BeanELResolver.java:151)
+		at org.apache.jasper.el.JasperELResolver.invoke(JasperELResolver.java:163)
+		at org.apache.el.parser.AstValue.getValue(AstValue.java:155)
+		at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:152)
+		at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:674)
+		at org.apache.jsp.allemployees_jsp._jspx_meth_c_005fforEach_005f0(allemployees_jsp.java:282)
+		at org.apache.jsp.allemployees_jsp._jspService(allemployees_jsp.java:151)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:64)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:436)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+17-Jun-2025 11:01:37.272 SEVERE [http-nio-8080-exec-22] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing [/footer.jsp] at line [13]
+
+10:             </div>
+11:             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+12:                 <li class="ms-3">
+13:                     <a class="text-body-secondary" href="#">
+14:                         <h5><i class="fa-brands fa-facebook"></i></h5>
+15:                     </a>
+16:                 </li>
+
+
+Stacktrace:] with root cause
+	jakarta.el.MethodNotFoundException: Method not found: class java.lang.String.getId()
+		at jakarta.el.Util.findWrapper(Util.java:298)
+		at jakarta.el.Util.findMethod(Util.java:142)
+		at jakarta.el.BeanELResolver.invoke(BeanELResolver.java:151)
+		at org.apache.jasper.el.JasperELResolver.invoke(JasperELResolver.java:163)
+		at org.apache.el.parser.AstValue.getValue(AstValue.java:155)
+		at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:152)
+		at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:674)
+		at org.apache.jsp.allemployees_jsp._jspx_meth_c_005fforEach_005f0(allemployees_jsp.java:282)
+		at org.apache.jsp.allemployees_jsp._jspService(allemployees_jsp.java:151)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:64)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:436)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+17-Jun-2025 11:01:55.421 SEVERE [http-nio-8080-exec-29] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing [/footer.jsp] at line [13]
+
+10:             </div>
+11:             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+12:                 <li class="ms-3">
+13:                     <a class="" href="#">
+14:                         <h5><i class="fa-brands fa-facebook"></i></h5>
+15:                     </a>
+16:                 </li>
+
+
+Stacktrace:] with root cause
+	jakarta.el.MethodNotFoundException: Method not found: class java.lang.String.getId()
+		at jakarta.el.Util.findWrapper(Util.java:298)
+		at jakarta.el.Util.findMethod(Util.java:142)
+		at jakarta.el.BeanELResolver.invoke(BeanELResolver.java:151)
+		at org.apache.jasper.el.JasperELResolver.invoke(JasperELResolver.java:163)
+		at org.apache.el.parser.AstValue.getValue(AstValue.java:155)
+		at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:152)
+		at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:674)
+		at org.apache.jsp.allemployees_jsp._jspx_meth_c_005fforEach_005f0(allemployees_jsp.java:282)
+		at org.apache.jsp.allemployees_jsp._jspService(allemployees_jsp.java:151)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:64)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:436)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+17-Jun-2025 11:05:02.533 SEVERE [http-nio-8080-exec-24] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [7] in the jsp file: [/allemployees.jsp]
+The method getEmployees() is undefined for the type EmployeeDao
+4: <%@page import="java.util.*" %>
+5: 
+6: <%
+7:     List<Employee> list = EmployeeDao.getEmployees();
+8:     request.setAttribute("list", list);
+9: %>
+10: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [7] in the jsp file: [/allemployees.jsp]
+The method getEmployees() is undefined for the type EmployeeDao
+4: <%@page import="java.util.*" %>
+5: 
+6: <%
+7:     List<Employee> list = EmployeeDao.getEmployees();
+8:     request.setAttribute("list", list);
+9: %>
+10: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+17-Jun-2025 11:36:43.204 SEVERE [http-nio-8080-exec-83] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+9:                 <div class="col-md-6">
+10:                     <div class="mb-3">
+11:                         <label class="form-label">ID</label>
+12:                         <input name="id" type="hidden" id="id" value="<%=e.getId()%>">
+13:                         <input type="text" class="form-control" value="<%=e.getId()%>" disabled>
+14:                     </div>
+15:                     <div class="mb-3">
+
+
+An error occurred at line: [13] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+10:                     <div class="mb-3">
+11:                         <label class="form-label">ID</label>
+12:                         <input name="id" type="hidden" id="id" value="<%=e.getId()%>">
+13:                         <input type="text" class="form-control" value="<%=e.getId()%>" disabled>
+14:                     </div>
+15:                     <div class="mb-3">
+16:                         <label class="form-label">Name</label>
+
+
+An error occurred at line: [17] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+14:                     </div>
+15:                     <div class="mb-3">
+16:                         <label class="form-label">Name</label>
+17:                         <input name="name" type="text" class="form-control" id="name" value="<%=e.getName()%>" placeholder="Your name">
+18:                     </div>
+19:                     <div class="mb-3">
+20:                         <label class="form-label">Email</label>
+
+
+An error occurred at line: [21] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+18:                     </div>
+19:                     <div class="mb-3">
+20:                         <label class="form-label">Email</label>
+21:                         <input name="email" type="email" class="form-control" id="email" value="<%=e.getEmail()%>" placeholder="Your email">
+22:                     </div>
+23:                     <div class="mb-3">
+24:                         <label class="form-label">Phone</label>
+
+
+An error occurred at line: [25] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+22:                     </div>
+23:                     <div class="mb-3">
+24:                         <label class="form-label">Phone</label>
+25:                         <input name="phone" type="text" class="form-control" id="phone" value="<%=e.getPhone()%>" placeholder="Your phone">
+26:                     </div>
+27:                 </div>
+28: 
+
+
+An error occurred at line: [33] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+30:                     <div class="mb-3">
+31:                         <label class="form-label">Designation</label>
+32:                         <select name="designation" class="form-select" id="designation">
+33:                             <option value="CEO" <%= "CEO".equals(e.getDesignation()) ? "selected" : "" %>>CEO</option>
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+
+
+An error occurred at line: [34] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+31:                         <label class="form-label">Designation</label>
+32:                         <select name="designation" class="form-select" id="designation">
+33:                             <option value="CEO" <%= "CEO".equals(e.getDesignation()) ? "selected" : "" %>>CEO</option>
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+37:                             <option value="Intern Software Developer" <%= "Intern Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Intern Software Developer</option>
+
+
+An error occurred at line: [35] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+32:                         <select name="designation" class="form-select" id="designation">
+33:                             <option value="CEO" <%= "CEO".equals(e.getDesignation()) ? "selected" : "" %>>CEO</option>
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+37:                             <option value="Intern Software Developer" <%= "Intern Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Intern Software Developer</option>
+38:                         </select>
+
+
+An error occurred at line: [36] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+33:                             <option value="CEO" <%= "CEO".equals(e.getDesignation()) ? "selected" : "" %>>CEO</option>
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+37:                             <option value="Intern Software Developer" <%= "Intern Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Intern Software Developer</option>
+38:                         </select>
+39:                     </div>
+
+
+An error occurred at line: [37] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+37:                             <option value="Intern Software Developer" <%= "Intern Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Intern Software Developer</option>
+38:                         </select>
+39:                     </div>
+40: 
+
+
+An error occurred at line: [43] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+40: 
+41:                     <div class="mb-3">
+42:                         <label class="form-label">Salary</label>
+43:                         <input name="salary" type="number" class="form-control" id="salary" value="<%=e.getSalary()%>" placeholder="Your salary">
+44:                     </div>
+45: 
+46:                     <div class="mb-3">
+
+
+An error occurred at line: [49] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+46:                     <div class="mb-3">
+47:                         <label class="form-label">Gender</label>
+48:                         <div class="form-check">
+49:                             <input name="gender" class="form-check-input" type="radio" id="gender" value="Male" <%= "Male".equals(e.getGender()) ? "checked" : "" %> >
+50:                             <label class="form-check-label" for="radioDefault1">
+51:                                 Male
+52:                             </label>
+
+
+An error occurred at line: [55] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+52:                             </label>
+53:                         </div>
+54:                         <div class="form-check">
+55:                             <input name="gender" class="form-check-input" type="radio" id="gender" value="Female" <%= "Female".equals(e.getGender()) ? "checked" : "" %>>
+56:                             <label class="form-check-label" for="radioDefault1">
+57:                                 Female
+58:                             </label>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:612)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:394)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:323)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:268)
+		at servlet.EmployeeServlet.doGet(EmployeeServlet.java:58)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+17-Jun-2025 11:36:43.204 SEVERE [http-nio-8080-exec-83] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [servlet.EmployeeServlet] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+9:                 <div class="col-md-6">
+10:                     <div class="mb-3">
+11:                         <label class="form-label">ID</label>
+12:                         <input name="id" type="hidden" id="id" value="<%=e.getId()%>">
+13:                         <input type="text" class="form-control" value="<%=e.getId()%>" disabled>
+14:                     </div>
+15:                     <div class="mb-3">
+
+
+An error occurred at line: [13] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+10:                     <div class="mb-3">
+11:                         <label class="form-label">ID</label>
+12:                         <input name="id" type="hidden" id="id" value="<%=e.getId()%>">
+13:                         <input type="text" class="form-control" value="<%=e.getId()%>" disabled>
+14:                     </div>
+15:                     <div class="mb-3">
+16:                         <label class="form-label">Name</label>
+
+
+An error occurred at line: [17] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+14:                     </div>
+15:                     <div class="mb-3">
+16:                         <label class="form-label">Name</label>
+17:                         <input name="name" type="text" class="form-control" id="name" value="<%=e.getName()%>" placeholder="Your name">
+18:                     </div>
+19:                     <div class="mb-3">
+20:                         <label class="form-label">Email</label>
+
+
+An error occurred at line: [21] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+18:                     </div>
+19:                     <div class="mb-3">
+20:                         <label class="form-label">Email</label>
+21:                         <input name="email" type="email" class="form-control" id="email" value="<%=e.getEmail()%>" placeholder="Your email">
+22:                     </div>
+23:                     <div class="mb-3">
+24:                         <label class="form-label">Phone</label>
+
+
+An error occurred at line: [25] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+22:                     </div>
+23:                     <div class="mb-3">
+24:                         <label class="form-label">Phone</label>
+25:                         <input name="phone" type="text" class="form-control" id="phone" value="<%=e.getPhone()%>" placeholder="Your phone">
+26:                     </div>
+27:                 </div>
+28: 
+
+
+An error occurred at line: [33] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+30:                     <div class="mb-3">
+31:                         <label class="form-label">Designation</label>
+32:                         <select name="designation" class="form-select" id="designation">
+33:                             <option value="CEO" <%= "CEO".equals(e.getDesignation()) ? "selected" : "" %>>CEO</option>
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+
+
+An error occurred at line: [34] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+31:                         <label class="form-label">Designation</label>
+32:                         <select name="designation" class="form-select" id="designation">
+33:                             <option value="CEO" <%= "CEO".equals(e.getDesignation()) ? "selected" : "" %>>CEO</option>
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+37:                             <option value="Intern Software Developer" <%= "Intern Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Intern Software Developer</option>
+
+
+An error occurred at line: [35] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+32:                         <select name="designation" class="form-select" id="designation">
+33:                             <option value="CEO" <%= "CEO".equals(e.getDesignation()) ? "selected" : "" %>>CEO</option>
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+37:                             <option value="Intern Software Developer" <%= "Intern Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Intern Software Developer</option>
+38:                         </select>
+
+
+An error occurred at line: [36] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+33:                             <option value="CEO" <%= "CEO".equals(e.getDesignation()) ? "selected" : "" %>>CEO</option>
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+37:                             <option value="Intern Software Developer" <%= "Intern Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Intern Software Developer</option>
+38:                         </select>
+39:                     </div>
+
+
+An error occurred at line: [37] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+37:                             <option value="Intern Software Developer" <%= "Intern Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Intern Software Developer</option>
+38:                         </select>
+39:                     </div>
+40: 
+
+
+An error occurred at line: [43] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+40: 
+41:                     <div class="mb-3">
+42:                         <label class="form-label">Salary</label>
+43:                         <input name="salary" type="number" class="form-control" id="salary" value="<%=e.getSalary()%>" placeholder="Your salary">
+44:                     </div>
+45: 
+46:                     <div class="mb-3">
+
+
+An error occurred at line: [49] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+46:                     <div class="mb-3">
+47:                         <label class="form-label">Gender</label>
+48:                         <div class="form-check">
+49:                             <input name="gender" class="form-check-input" type="radio" id="gender" value="Male" <%= "Male".equals(e.getGender()) ? "checked" : "" %> >
+50:                             <label class="form-check-label" for="radioDefault1">
+51:                                 Male
+52:                             </label>
+
+
+An error occurred at line: [55] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+52:                             </label>
+53:                         </div>
+54:                         <div class="form-check">
+55:                             <input name="gender" class="form-check-input" type="radio" id="gender" value="Female" <%= "Female".equals(e.getGender()) ? "checked" : "" %>>
+56:                             <label class="form-check-label" for="radioDefault1">
+57:                                 Female
+58:                             </label>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+9:                 <div class="col-md-6">
+10:                     <div class="mb-3">
+11:                         <label class="form-label">ID</label>
+12:                         <input name="id" type="hidden" id="id" value="<%=e.getId()%>">
+13:                         <input type="text" class="form-control" value="<%=e.getId()%>" disabled>
+14:                     </div>
+15:                     <div class="mb-3">
+
+
+An error occurred at line: [13] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+10:                     <div class="mb-3">
+11:                         <label class="form-label">ID</label>
+12:                         <input name="id" type="hidden" id="id" value="<%=e.getId()%>">
+13:                         <input type="text" class="form-control" value="<%=e.getId()%>" disabled>
+14:                     </div>
+15:                     <div class="mb-3">
+16:                         <label class="form-label">Name</label>
+
+
+An error occurred at line: [17] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+14:                     </div>
+15:                     <div class="mb-3">
+16:                         <label class="form-label">Name</label>
+17:                         <input name="name" type="text" class="form-control" id="name" value="<%=e.getName()%>" placeholder="Your name">
+18:                     </div>
+19:                     <div class="mb-3">
+20:                         <label class="form-label">Email</label>
+
+
+An error occurred at line: [21] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+18:                     </div>
+19:                     <div class="mb-3">
+20:                         <label class="form-label">Email</label>
+21:                         <input name="email" type="email" class="form-control" id="email" value="<%=e.getEmail()%>" placeholder="Your email">
+22:                     </div>
+23:                     <div class="mb-3">
+24:                         <label class="form-label">Phone</label>
+
+
+An error occurred at line: [25] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+22:                     </div>
+23:                     <div class="mb-3">
+24:                         <label class="form-label">Phone</label>
+25:                         <input name="phone" type="text" class="form-control" id="phone" value="<%=e.getPhone()%>" placeholder="Your phone">
+26:                     </div>
+27:                 </div>
+28: 
+
+
+An error occurred at line: [33] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+30:                     <div class="mb-3">
+31:                         <label class="form-label">Designation</label>
+32:                         <select name="designation" class="form-select" id="designation">
+33:                             <option value="CEO" <%= "CEO".equals(e.getDesignation()) ? "selected" : "" %>>CEO</option>
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+
+
+An error occurred at line: [34] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+31:                         <label class="form-label">Designation</label>
+32:                         <select name="designation" class="form-select" id="designation">
+33:                             <option value="CEO" <%= "CEO".equals(e.getDesignation()) ? "selected" : "" %>>CEO</option>
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+37:                             <option value="Intern Software Developer" <%= "Intern Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Intern Software Developer</option>
+
+
+An error occurred at line: [35] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+32:                         <select name="designation" class="form-select" id="designation">
+33:                             <option value="CEO" <%= "CEO".equals(e.getDesignation()) ? "selected" : "" %>>CEO</option>
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+37:                             <option value="Intern Software Developer" <%= "Intern Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Intern Software Developer</option>
+38:                         </select>
+
+
+An error occurred at line: [36] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+33:                             <option value="CEO" <%= "CEO".equals(e.getDesignation()) ? "selected" : "" %>>CEO</option>
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+37:                             <option value="Intern Software Developer" <%= "Intern Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Intern Software Developer</option>
+38:                         </select>
+39:                     </div>
+
+
+An error occurred at line: [37] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+34:                             <option value="Project Manager" <%= "Project Manager".equals(e.getDesignation()) ? "selected" : "" %>>Project Manager</option>
+35:                             <option value="Senior Software Developer" <%= "Senior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Senior Software Developer</option>
+36:                             <option value="Junior Software Developer" <%= "Junior Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Junior Software Developer</option>
+37:                             <option value="Intern Software Developer" <%= "Intern Software Developer".equals(e.getDesignation()) ? "selected" : "" %>>Intern Software Developer</option>
+38:                         </select>
+39:                     </div>
+40: 
+
+
+An error occurred at line: [43] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+40: 
+41:                     <div class="mb-3">
+42:                         <label class="form-label">Salary</label>
+43:                         <input name="salary" type="number" class="form-control" id="salary" value="<%=e.getSalary()%>" placeholder="Your salary">
+44:                     </div>
+45: 
+46:                     <div class="mb-3">
+
+
+An error occurred at line: [49] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+46:                     <div class="mb-3">
+47:                         <label class="form-label">Gender</label>
+48:                         <div class="form-check">
+49:                             <input name="gender" class="form-check-input" type="radio" id="gender" value="Male" <%= "Male".equals(e.getGender()) ? "checked" : "" %> >
+50:                             <label class="form-check-label" for="radioDefault1">
+51:                                 Male
+52:                             </label>
+
+
+An error occurred at line: [55] in the jsp file: [/editemployee.jsp]
+e cannot be resolved
+52:                             </label>
+53:                         </div>
+54:                         <div class="form-check">
+55:                             <input name="gender" class="form-check-input" type="radio" id="gender" value="Female" <%= "Female".equals(e.getGender()) ? "checked" : "" %>>
+56:                             <label class="form-check-label" for="radioDefault1">
+57:                                 Female
+58:                             </label>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:612)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:394)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:323)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:268)
+		at servlet.EmployeeServlet.doGet(EmployeeServlet.java:58)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+17-Jun-2025 12:03:41.304 SEVERE [http-nio-8080-exec-131] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/searchemployee.jsp]
+Type mismatch: cannot convert from Object to List<Employee>
+2: <%@page import="java.util.*" %>
+3: 
+4: <%
+5:     List<Employee> e = request.getAttribute("employee");
+6: %>
+7: 
+8: <title>Search Employee - EMS</title>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/searchemployee.jsp]
+Type mismatch: cannot convert from Object to List<Employee>
+2: <%@page import="java.util.*" %>
+3: 
+4: <%
+5:     List<Employee> e = request.getAttribute("employee");
+6: %>
+7: 
+8: <title>Search Employee - EMS</title>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+17-Jun-2025 12:07:51.595 SEVERE [http-nio-8080-exec-139] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [servlet.EmployeeServlet] in context with path [] threw exception
+	java.lang.NumberFormatException: For input string: ""
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:678)
+		at java.base/java.lang.Integer.parseInt(Integer.java:786)
+		at servlet.EmployeeServlet.doGet(EmployeeServlet.java:56)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+17-Jun-2025 12:12:20.581 SEVERE [http-nio-8080-exec-177] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/searchemployee.jsp]
+The method setAttribute(String, List<Employee>) is undefined for the type HttpServletResponse
+3: 
+4: <%
+5:     List<Employee> list = (List) request.getAttribute("employee");
+6:     response.setAttribute("list", list);
+7: %>
+8: 
+9: <title>Search Employee - EMS</title>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/searchemployee.jsp]
+The method setAttribute(String, List<Employee>) is undefined for the type HttpServletResponse
+3: 
+4: <%
+5:     List<Employee> list = (List) request.getAttribute("employee");
+6:     response.setAttribute("list", list);
+7: %>
+8: 
+9: <title>Search Employee - EMS</title>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+17-Jun-2025 12:26:40.721 SEVERE [http-nio-8080-exec-223] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/searchemployee.jsp]
+Employee cannot be resolved to a type
+2: <%@page import="java.util.*" %>
+3: 
+4: <%
+5:     List<Employee> list = (List) request.getAttribute("employee");
+6:     request.setAttribute("list", list);
+7: %>
+8: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/searchemployee.jsp]
+Employee cannot be resolved to a type
+2: <%@page import="java.util.*" %>
+3: 
+4: <%
+5:     List<Employee> list = (List) request.getAttribute("employee");
+6:     request.setAttribute("list", list);
+7: %>
+8: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+17-Jun-2025 12:47:40.224 SEVERE [http-nio-8080-exec-241] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error, insert ") Statement" to complete IfStatement
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+$ cannot be resolved to a variable
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error on tokens, Expression expected instead
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error, insert ";" to complete BlockStatements
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [70] in the jsp file: [/searchemployee.jsp]
+Syntax error on token "else", delete this token
+67: </div>
+68: 
+69: <%
+70:     }else{
+71: %>
+72: 
+73: Fuck
+
+
+An error occurred at line: [295] in the generated java file: [C:\Github\JSP\apache-tomcat-10.1.41\work\Catalina\localhost\ROOT\org\apache\jsp\searchemployee_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:612)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:394)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:323)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:268)
+		at servlet.EmployeeServlet.doPost(EmployeeServlet.java:47)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+17-Jun-2025 12:47:40.224 SEVERE [http-nio-8080-exec-241] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [servlet.EmployeeServlet] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error, insert ") Statement" to complete IfStatement
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+$ cannot be resolved to a variable
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error on tokens, Expression expected instead
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error, insert ";" to complete BlockStatements
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [70] in the jsp file: [/searchemployee.jsp]
+Syntax error on token "else", delete this token
+67: </div>
+68: 
+69: <%
+70:     }else{
+71: %>
+72: 
+73: Fuck
+
+
+An error occurred at line: [295] in the generated java file: [C:\Github\JSP\apache-tomcat-10.1.41\work\Catalina\localhost\ROOT\org\apache\jsp\searchemployee_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error, insert ") Statement" to complete IfStatement
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+$ cannot be resolved to a variable
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error on tokens, Expression expected instead
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error, insert ";" to complete BlockStatements
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [70] in the jsp file: [/searchemployee.jsp]
+Syntax error on token "else", delete this token
+67: </div>
+68: 
+69: <%
+70:     }else{
+71: %>
+72: 
+73: Fuck
+
+
+An error occurred at line: [295] in the generated java file: [C:\Github\JSP\apache-tomcat-10.1.41\work\Catalina\localhost\ROOT\org\apache\jsp\searchemployee_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:612)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:394)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:323)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:268)
+		at servlet.EmployeeServlet.doPost(EmployeeServlet.java:47)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+17-Jun-2025 12:47:45.686 SEVERE [http-nio-8080-exec-236] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error, insert ") Statement" to complete IfStatement
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+$ cannot be resolved to a variable
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error on tokens, Expression expected instead
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error, insert ";" to complete BlockStatements
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [70] in the jsp file: [/searchemployee.jsp]
+Syntax error on token "else", delete this token
+67: </div>
+68: 
+69: <%
+70:     }else{
+71: %>
+72: 
+73: Fuck
+
+
+An error occurred at line: [295] in the generated java file: [C:\Github\JSP\apache-tomcat-10.1.41\work\Catalina\localhost\ROOT\org\apache\jsp\searchemployee_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error, insert ") Statement" to complete IfStatement
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+$ cannot be resolved to a variable
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error on tokens, Expression expected instead
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [31] in the jsp file: [/searchemployee.jsp]
+Syntax error, insert ";" to complete BlockStatements
+28: </div>
+29: 
+30: <%
+31: if(${e.getId()} > 0){
+32: %>
+33: 
+34: <div class="container bg-warning my-3 px-0 border border-warning rounded">
+
+
+An error occurred at line: [70] in the jsp file: [/searchemployee.jsp]
+Syntax error on token "else", delete this token
+67: </div>
+68: 
+69: <%
+70:     }else{
+71: %>
+72: 
+73: Fuck
+
+
+An error occurred at line: [295] in the generated java file: [C:\Github\JSP\apache-tomcat-10.1.41\work\Catalina\localhost\ROOT\org\apache\jsp\searchemployee_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:555)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:332)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:357)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:308)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:666)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+17-Jun-2025 13:39:59.806 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+17-Jun-2025 13:39:59.806 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

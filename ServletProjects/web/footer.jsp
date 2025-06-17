@@ -10,27 +10,27 @@
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li class="ms-3">
-                    <a class="text-body-secondary" href="#" aria-label="Facebook">
+                    <a class="text-body-secondary" href="#">
                         <h5><i class="fa-brands fa-facebook"></i></h5>
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a class="text-body-secondary" href="#" aria-label="Facebook">
+                    <a class="text-body-secondary" href="#">
                         <h5><i class="fa-brands fa-twitter"></i></h5>
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a class="text-body-secondary" href="#" aria-label="Facebook">
+                    <a class="text-body-secondary" href="#">
                         <h5><i class="fa-brands fa-instagram"></i></h5>
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a class="text-body-secondary" href="#" aria-label="Facebook">
+                    <a class="text-body-secondary" href="#">
                         <h5><i class="fa-brands fa-github"></i></h5>
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a class="text-body-secondary" href="#" aria-label="Facebook">
+                    <a class="text-body-secondary" href="#">
                         <h5><i class="fa-brands fa-youtube"></i></h5>
                     </a>
                 </li>

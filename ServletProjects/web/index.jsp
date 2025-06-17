@@ -1,32 +1,42 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <title>Home - EMS</title>
 <%@include file="header.jsp" %>
-<div class="container-fluid mx-auto p-0">
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="annie-spratt-XMpXzzWrJ6g-unsplash.jpg" class="d-block" style="height: 85vh; width: auto" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="mohammad-rahmani-W-LQbAUhE64-unsplash.jpg" class="d-block" style="height: 85vh; width: auto" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="sigmund-Fa9b57hffnM-unsplash.jpg" class="d-block" style="height: 85vh; width: auto" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+
+<div class="container-fluid">
+    <div class="py-4 bg-light"></div>
+
+<header class="bg-light text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Welcome To EMS</h1>
+        <p class="lead">Efficiently manage your employees with our powerful and intuitive system.</p>
+        <a href="aboutus.jsp" class="btn btn-warning btn-lg">Explore Features</a>
     </div>
+</header>
+
+
+<!-- Features -->
+<section id="features" class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="fas fa-users fa-3x text-warning mb-3"></i>
+                <h5>Employee Database</h5>
+                <p>Maintain detailed employee profiles with ease.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-clock fa-3x text-warning mb-3"></i>
+                <h5>Attendance Tracking</h5>
+                <p>Track attendance and working hours in real time.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-money-bill-wave fa-3x text-warning mb-3"></i>
+                <h5>Payroll Management</h5>
+                <p>Automate salary calculations and payslip generation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="py-4 bg-light"></div>
 </div>
 <%@include file="footer.jsp" %>
