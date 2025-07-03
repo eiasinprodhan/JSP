@@ -3,102 +3,52 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Add New Employee - Kora Style</title>
-        <style>
-            body {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                background-color: #f4f6f8;
-                margin: 0;
-                padding: 20px;
-                color: #333;
-            }
-            .container {
-                max-width: 500px;
-                margin: 50px auto;
-                background-color: #fff;
-                padding: 30px;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-            }
-            h2 {
-                text-align: center;
-                margin-bottom: 25px;
-                color: #444;
-            }
-            label {
-                display: block;
-                margin-top: 15px;
-                font-weight: bold;
-            }
-            input[type="text"],
-            input[type="number"] {
-                width: 100%;
-                padding: 10px;
-                margin-top: 5px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                font-size: 14px;
-            }
-            .form-actions {
-                display: flex;
-                justify-content: space-between;
-                margin-top: 20px;
-            }
-            button {
-                flex: 1;
-                padding: 10px;
-                font-size: 15px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                transition: background-color 0.3s;
-                color: white;
-            }
-            .save-btn {
-                background-color: #0066cc;
-                margin-right: 10px;
-            }
-            .save-btn:hover {
-                background-color: #004c99;
-            }
-            .reset-btn {
-                background-color: #6c757d;
-            }
-            .reset-btn:hover {
-                background-color: #5a6268;
-            }
-            .back-link {
-                display: block;
-                text-align: center;
-                margin-top: 20px;
-                text-decoration: none;
-                color: #0066cc;
-                font-size: 14px;
-            }
-            .back-link:hover {
-                text-decoration: underline;
-            }
-        </style>
+        <title>Add New Employee</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
-    <body>
-        <div class="container">
-            <h2>Add New Employee</h2>
-            <form action="employeeservlet" method="post">
-                <label for="name">Name</label>
-                <input name="name" type="text" id="name" placeholder="Enter name" required>
+    <body class="bg-light">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4">Add New Employee</h3>
+                            <form action="employeeservlet" method="post">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input name="name" type="text" id="name" class="form-control" placeholder="Enter name" required>
+                                </div>
 
-                <label for="designation">Designation</label>
-                <input name="designation" type="text" id="designation" placeholder="Enter designation" required>
+                                <div class="mb-3">
+                                    <label for="designation" class="form-label">Designation</label>
+                                    <select name="designation" class="form-select" id="designation">
+                                        <option value="null" selected>Choose Your Designation</option>
+                                        <option value="CEO">CEO</option>
+                                        <option value="Project Manager">Project Manager</option>
+                                        <option value="Senior Software Developer">Senior Software Developer</option>
+                                        <option value="Junior Software Developer">Junior Software Developer</option>
+                                        <option value="Intern Software Developer">Intern Software Developer</option>
+                                    </select>
+                                </div>
 
-                <label for="salary">Salary</label>
-                <input name="salary" type="number" id="salary" placeholder="Enter salary" required>
+                                <div class="mb-3">
+                                    <label for="salary" class="form-label">Salary</label>
+                                    <input name="salary" type="number" id="salary" class="form-control" placeholder="Enter salary" required>
+                                </div>
 
-                <div class="form-actions">
-                    <button name="action" value="save" type="submit" class="save-btn">Save</button>
-                    <button type="reset" class="reset-btn">Reset</button>
+                                <div class="d-flex justify-content-between">
+                                    <button name="action" value="save" type="submit" class="btn btn-primary">Save</button>
+                                    <button type="reset" class="btn btn-secondary">Reset</button>
+                                </div>
+                            </form>
+                            <div class="text-center mt-3">
+                                <a href="index.jsp" class="text-decoration-none">← Back to Employee List</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </form>
-            <a href="index.jsp" class="back-link">← Back to Employee List</a>
+            </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
